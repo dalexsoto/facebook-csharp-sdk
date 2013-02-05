@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 #endif
 
 
-#if !(SILVERLIGHT || NETFX_CORE || TESTS)
+#if !(SILVERLIGHT || NETFX_CORE || TESTS || MONOTOUCH || MONODROID)
 [assembly: AllowPartiallyTrustedCallers]
     #if !NET35
         [assembly: SecurityRules(SecurityRuleSet.Level1)]
