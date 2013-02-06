@@ -88,7 +88,7 @@
     <Reference Include="monotouch" />
     <Reference Include="MonoTouch.Dialog-1" />
     <Reference Include="Facebook">
-      <HintPath>..\..\..\Bin\Debug\MonoTouch\Facebook.dll</HintPath>
+      <HintPath>..\..\..\bin\Release\MonoTouch\Facebook.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

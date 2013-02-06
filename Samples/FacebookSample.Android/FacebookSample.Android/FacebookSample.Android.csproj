@@ -44,7 +44,7 @@
     <Reference Include="Mono.Android" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Facebook">
-      <HintPath>..\..\..\Bin\Debug\MonoDroid\Facebook.dll</HintPath>
+      <HintPath>..\..\..\bin\Release\MonoDroid\Facebook.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
