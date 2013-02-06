@@ -42,10 +42,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="Facebook">
-      <HintPath>..\..\Git\facebook-csharp-sdk\Bin\Debug\MonoDroid\Facebook.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Facebook">
+      <HintPath>..\..\..\Bin\Debug\MonoDroid\Facebook.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
