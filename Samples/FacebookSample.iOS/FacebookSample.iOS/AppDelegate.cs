@@ -51,7 +51,7 @@ namespace FacebookSample.iOS
 				new Section ("Actions") {
 					new FacebookLoginElement (AppId, ExtendedPermissions),
 					new StringElement ("Graph API Sample", GraphApiSample),
-					new StringElement ("FQL Samplel", FqlSample),
+					new StringElement ("FQL Sample", FqlSample),
 					new StringElement ("Post \"Hi\" to your wall", PostHiToWall),
 					new StringElement ("Remove \"Hi\" from your wall", RemoveHiFromWall)
 				}
