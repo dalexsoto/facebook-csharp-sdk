@@ -2,8 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+#if __UNIFIED__
+using Foundation;
+using UIKit;
+#else
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+#endif
 
 using MonoTouch.Dialog;
 using Facebook;
@@ -22,7 +27,7 @@ namespace FacebookSample.iOS
 		string lastMessageId;
 		RootElement friends;
 
-		private FacebookClient _fb;
+		FacebookClient _fb;
 
 		// Replace here you own Facebook App Id, if you don't have one go to
 		// https://developers.facebook.com/apps

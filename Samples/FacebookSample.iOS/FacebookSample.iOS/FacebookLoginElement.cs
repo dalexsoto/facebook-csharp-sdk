@@ -1,6 +1,13 @@
 using System;
+
+#if __UNIFIED__
+using Foundation;
+using UIKit;
+#else
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+#endif
+
 using MonoTouch.Dialog;
 using Facebook;
 using System.Collections.Generic;
@@ -168,7 +175,13 @@ namespace FacebookSample.iOS
 					if (t.Exception != null)
 					{
 						appDelegate.FacebookLoggedIn (false, accessToken, null, t.Exception);
+
+						#if __UNIFIED__
+						dvc.NavigationController.PopViewController (true);
+						#else
 						dvc.NavigationController.PopViewControllerAnimated (true);
+						#endif
+
 						return;
 					}
 					
@@ -176,7 +189,13 @@ namespace FacebookSample.iOS
 					var id = (string)result["id"];
 					appDelegate.BeginInvokeOnMainThread ( () => {
 						appDelegate.FacebookLoggedIn (true, accessToken, id, null);
+
+						#if __UNIFIED__
+						dvc.NavigationController.PopViewController (true);
+						#else
 						dvc.NavigationController.PopViewControllerAnimated (true);
+						#endif
+
 					});
 				}
 			});
